@@ -14,10 +14,10 @@ function App() {
       <Header />
       <main className="container content">
         <Routes>
-          <Route path="/" component={<Home />} />
-          <Route path="/contacts" component={<Contacts />} />
-          <Route path="/about" component={<About />} />
-          <Route path="*" component={<NotFoundPage />} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="*" element={<NotFoundPage />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
       </main>
       <Footer />

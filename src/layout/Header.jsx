@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header>
       <nav className="lime darken-3">
         <div className=" nav-wrapper container">
-          <a
-            href="https://github.com/Dmitry-Poltaradnev/react-game_items-shop-app"
-            className="brand-logo"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Foods Shop
-          </a>
+          <div className="headerGitlink">
+            <Link to="/" className="brand-logo">
+              Foods Shop
+            </Link>
+          </div>
+          <div className="linksWrapper">
+            <Link to="/about">About</Link>
+            <Link to="/contacts">Contacts</Link>
+          </div>
         </div>
       </nav>
     </header>
