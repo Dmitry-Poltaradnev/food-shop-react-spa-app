@@ -11,7 +11,6 @@ export const Home = () => {
       setCatalog(data.categories);
     });
   }, []);
-
   return (
     <>{!catalog.length ? <Preloader /> : <CategoryList catalog={catalog} />}</>
   );
