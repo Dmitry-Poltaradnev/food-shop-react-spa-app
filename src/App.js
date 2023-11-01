@@ -8,8 +8,6 @@ import { About } from "./pages/About";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import Recipe from "./pages/Recipe";
 
-import "./App.css";
-
 function App() {
   return (
     <>

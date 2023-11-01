@@ -1,10 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CategoryItem = (props) => {
   const { idCategory, strCategory, strCategoryThumb, strCategoryDescription } =
     props;
 
-  // const navigate = useNavigate();
   return (
     <>
       <div id={idCategory} className="card">
