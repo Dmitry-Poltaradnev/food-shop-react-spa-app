@@ -14,10 +14,10 @@ function Category() {
   }, [name]);
   return (
     <>
+      {!meals.length ? <Preloader /> : <MealsList meals={meals} />}
       <button className="btn" onClick={() => navigate(-1)}>
         Go back
       </button>
-      {!meals.length ? <Preloader /> : <MealsList meals={meals} />}
     </>
   );
 }

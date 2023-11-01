@@ -46,7 +46,6 @@ function Recipe() {
                 </tr>
               );
             }
-
             return null;
           })}
         </tbody>
@@ -60,7 +59,7 @@ function Recipe() {
             src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(
               -11
             )}`}
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       )}
